@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!-- Add other stylesheet links as needed -->
+
+    <!-- Add additional style for the line -->
+    <style>
+        hr {
+            border-top: 2px solid #613581;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .gadgets-line {
+            color: #613581;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px #000;
+        }
+    </style>
 </head>
 <body>
     <!-- Your HTML content from previous messages -->
@@ -20,5 +35,16 @@
     <script type="text/javascript" src="js/jquery.cookie-jquery.cookie.js"></script>
     <script type="text/javascript" src="js/js-bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <!-- Add other script links as needed -->
+
+    <!-- Add the new button at the bottom -->
+    <div class="container">
+        <button class="btn btn-play" onclick="copyToClipboard('#play-ip')" data-toggle="tooltip" title="Click to copy"><span id="play-ip">acasual.club</span> <i class="fa-solid fa-angles-right"></i></button>
+    </div>
+
+    <!-- Add the line with dark purple color, bold, and a little glow -->
+    <div class="container">
+        <hr class="gadgets-line">
+        <p class="gadgets-line">Gadgets</p>
+    </div>
 </body>
 </html>
