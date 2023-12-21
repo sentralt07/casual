@@ -8,6 +8,21 @@
   <link rel="icon" href="https://cdn.discordapp.com/attachments/1146502055754731581/1187476975644848199/Casual.png?ex=6597071d&is=6584921d&hm=6bb868fc535717be90a27b5f532935297a54b4087d011637c3ed2ab42c19d2eb&" type="image/png">
   <title>CASUALDUELS CLUB Official Site • Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha384-VH+JDUPNN4exC/4TOU5fAnm2+qzxg1lT0UqD8pGZBbuUXiRO0JBlQ6Fpgcdl8gUq" crossorigin="anonymous">
+  <style>
+    /* Custom style for minimized CookieConsent */
+    .cookieconsent-container {
+      position: fixed;
+      bottom: 1.5cm;
+      right: 1.5cm;
+      width: 50px; /* Adjust the width as needed */
+      background-color: #613581;
+      color: #ffffff;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
 
@@ -17,8 +32,13 @@
   </div>
 </nav>
 
-<!-- CookieConsent container -->
-<div class="cookieconsent-container">
+<!-- Minimized CookieConsent container -->
+<div class="cookieconsent-container" onclick="openCookieConsent()">
+  Cookies
+</div>
+
+<!-- Full CookieConsent container (hidden by default) -->
+<div class="cookieconsent-full-container" id="cookieconsent-full-container">
   <div class="cookieconsent-message">
     This website uses cookies to ensure you get the best experience on our website.
   </div>
@@ -30,6 +50,11 @@
 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha384-rkplwEeDEkK1vMTLX91s0H9D8oEQUw+j3LweogfNr0Az5ED9CtYJKg8hQ4lgzTOX" crossorigin="anonymous"></script>
+<script>
+  function openCookieConsent() {
+    document.getElementById('cookieconsent-full-container').style.display = 'block';
+  }
+</script>
 
 </body>
 </html>
