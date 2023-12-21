@@ -1,68 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACasual Guild Official Site • Home</title>
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1146502055754731581/1187476975644848199/Casual.png?ex=6597071d&is=6584921d&hm=6bb868fc535717be90a27b5f532935297a54b4087d011637c3ed2ab42c19d2eb&" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha384-VH+JDUPNN4exC/4TOU5fAnm2+qzxg1lT0UqD8pGZBbuUXiRO0JBlQ6Fpgcdl8gUq" crossorigin="anonymous">
-    <!-- Add other stylesheet links as needed -->
-
-    <!-- CookieConsent script -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha384-rkplwEeDEkK1vMTLX91s0H9D8oEQUw+j3LweogfNr0Az5ED9CtYJKg8hQ4lgzTOX" crossorigin="anonymous"></script>
-    
-    <!-- CookieConsent initialization -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            cookieconsent.initialise({
-                palette: {
-                    popup: {
-                        background: "#613581",
-                        text: "#ffffff"
-                    },
-                    button: {
-                        background: "#ffffff",
-                        text: "#613581"
-                    }
-                },
-                content: {
-                    message: "This website uses cookies to ensure you get the best experience on our website.",
-                    dismiss: "Got it!",
-                    allow: "Allow",
-                    deny: "Disallow",
-                    link: "Learn more",
-                    href: "/cookies"
-                }
-            });
-        });
-    </script>
-
-    <!-- Add other script links as needed -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add the website's icon (favicon) -->
+  <link rel="icon" href="https://cdn.discordapp.com/attachments/1146502055754731581/1187476975644848199/Casual.png?ex=6597071d&is=6584921d&hm=6bb868fc535717be90a27b5f532935297a54b4087d011637c3ed2ab42c19d2eb&" type="image/png">
+  <title>ACasual Guild Official Site • Home</title>
 </head>
 <body>
-    <!-- Your HTML content from previous messages -->
 
-    <!-- ... (rest of your HTML content) ... -->
+<nav class="navbar">
+  <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    <a href="#">Home</a>
+  </div>
+  <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    <a href="socials-update.html">Socials</a>
+  </div>
+  <div class="nav-item" onmouseover="hoverEffect(this)" onmouseout="removeHoverEffect(this)">
+    <a href="community.html">Community</a>
+  </div>
+</nav>
 
-    <script type="text/javascript" src="js/dist-jquery.min.js"></script>
-    <script type="text/javascript" src="js/js-spoiler.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie-jquery.cookie.js"></script>
-    <script type="text/javascript" src="js/js-bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <!-- Add other script links as needed -->
+<div class="social-container">
+  <!-- Your social info here -->
+</div>
 
-    <!-- Add the new button at the bottom -->
-    <div class="container">
-        <button class="btn btn-play" onclick="copyToClipboard('#play-ip')" data-toggle="tooltip" title="Click to copy"><span id="play-ip">acasual.club</span> <i class="fa-solid fa-angles-right"></i></button>
-    </div>
-
-    <!-- Add the line with dark purple color, bold, and a little glow -->
-<div class="container">
-    <hr class="gadgets-line">
-    <div class="gadgets-line-container">
-        <p class="gadgets-line-text">━ <strong>Acasual</strong> ━</p>
-    </div>
+<script src="script.js"></script>
 </body>
 </html>
