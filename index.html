@@ -8,22 +8,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha384-VH+JDUPNN4exC/4TOU5fAnm2+qzxg1lT0UqD8pGZBbuUXiRO0JBlQ6Fpgcdl8gUq" crossorigin="anonymous">
     <!-- Add other stylesheet links as needed -->
 
-    <!-- Add additional style for the line -->
-    <style>
-        hr {
-            border-top: 2px solid #613581;
-            width: 100%;
-            margin: 10px 0;
-        }
+    <!-- CookieConsent script -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha384-rkplwEeDEkK1vMTLX91s0H9D8oEQUw+j3LweogfNr0Az5ED9CtYJKg8hQ4lgzTOX" crossorigin="anonymous"></script>
+    
+    <!-- CookieConsent initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "#613581",
+                        text: "#ffffff"
+                    },
+                    button: {
+                        background: "#ffffff",
+                        text: "#613581"
+                    }
+                },
+                content: {
+                    message: "This website uses cookies to ensure you get the best experience on our website.",
+                    dismiss: "Got it!",
+                    allow: "Allow",
+                    deny: "Disallow",
+                    link: "Learn more",
+                    href: "/cookies"
+                }
+            });
+        });
+    </script>
 
-        .gadgets-line {
-            color: #613581;
-            font-weight: bold;
-            text-shadow: 1px 1px 3px #000;
-        }
-    </style>
+    <!-- Add other script links as needed -->
 </head>
 <body>
     <!-- Your HTML content from previous messages -->
@@ -44,7 +61,7 @@
     <!-- Add the line with dark purple color, bold, and a little glow -->
     <div class="container">
         <hr class="gadgets-line">
-        <p class="gadgets-line">Gadgets</p>
+        <p class="gadgets-line">━</p>
     </div>
 </body>
 </html>
