@@ -4,58 +4,40 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('https://cdn.discordapp.com/attachments/1005839410086035578/1187499938716864553/wp5308033.png?ex=65971c80&is=6584a780&hm=bb243b68fe6320abf76c7d0ecacc323b80a386198aa9eb4171127203ef5f9865&') bottom center no-repeat;
-  background-size: cover;
-  background-color: #333; /* Dark gray background color */
-}
-
-.cookieconsent-container {
-  position: fixed;
-  bottom: 1.5cm;
-  right: 1.5cm;
-  width: 50px; /* Adjust the width as needed */
-  background-color: #613581;
-  color: #ffffff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .social-container {
-  position: fixed;
-  bottom: 1cm;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
-.social-link {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  cursor: pointer;
+.social-info {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-.social-link:hover .social-popup {
-  opacity: 1;
-  transform: translateY(-10px);
+.social-info:hover {
+  transform: scale(1.05);
 }
 
-.social-popup {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(97, 53, 129, 0.9);
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
+.social-header {
+  margin-bottom: 10px;
+}
+
+.social-header h2 {
+  font-size: 24px;
+}
+
+.social-info p {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .navbar {
