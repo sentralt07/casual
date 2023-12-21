@@ -1,15 +1,32 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+/* Add this to your style.css or within a <style> tag in the <head> */
+.gadgets-line {
+    background-color: transparent; /* Set the background color to transparent for the default state */
+    border: none; /* Remove the default border */
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
+.gadgets-line-container {
+    display: inline-block;
+    position: relative;
 }
 
-/* Customize your styles based on your preferences */
+.gadgets-line-text {
+    color: #ff69b4; /* Set the text color to pink */
+    font-weight: bold; /* Set the text to bold */
+}
 
-/* Add styles for the welcome card, footer, etc. */
+.gadgets-line-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Set the background color to dark gray */
+    opacity: 0; /* Set the initial opacity to 0 */
+    transition: opacity 0.3s ease-in-out; /* Add a transition effect for opacity */
+}
 
-/* You can add more styles based on your design requirements */
+.gadgets-line-container:hover::after {
+    opacity: 1; /* On hover, set the opacity to 1 */
+    box-shadow: 0 0 10px #613581; /* Add a box shadow with a purple glow */
+}
