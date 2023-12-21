@@ -1,45 +1,10 @@
-/* Add this to styles.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: url('https://cdn.discordapp.com/attachments/1005839410086035578/1187499938716864553/wp5308033.png?ex=65971c80&is=6584a780&hm=bb243b68fe6320abf76c7d0ecacc323b80a386198aa9eb4171127203ef5f9865&') bottom center no-repeat;
+  background: url('https://cdn.discordapp.com/attachments/1005839410086035578/1187499938716864553/wp5308033.png?ex=65971c80&is=6584a780&hm=bb243b68fe6320abf76c7d0ecacc323b80a386198aa9eb4171127203ef5f9865&');
   background-size: cover;
-}
-
-.social-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.social-info {
-  width: 300px;
-  margin: 10px;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.social-info:hover {
-  transform: scale(1.05);
-}
-
-.social-header {
-  margin-bottom: 10px;
-}
-
-.social-header h2 {
-  font-size: 24px;
-}
-
-.social-info p {
-  font-size: 16px;
-  line-height: 1.5;
+  background-color: #303030; /* Dark gray color */
 }
 
 .navbar {
@@ -67,4 +32,54 @@ body {
 
 .nav-item:hover {
   transform: scale(1.05);
+}
+
+/* CookieConsent styles */
+.cookieconsent-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background: #613581;
+  text-align: center;
+  z-index: 1000;
+}
+
+.cookieconsent-message {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.cookieconsent-dismiss {
+  background: #ffffff;
+  color: #613581;
+  font-size: 14px;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.cookieconsent-allow {
+  background: #613581;
+  color: #ffffff;
+  font-size: 14px;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.cookieconsent-deny {
+  background: #ffffff;
+  color: #613581;
+  font-size: 14px;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.cookieconsent-link {
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: underline;
 }
