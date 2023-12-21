@@ -1,0 +1,43 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Dark Gray Background */
+    color: #ffffff; /* White Text */
+}
+
+header {
+    background-color: #2b0057; /* Galaxy Purple Header Background */
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #2b0057;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add more styles as needed */
